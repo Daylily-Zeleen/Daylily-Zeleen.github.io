@@ -1,0 +1,263 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node",
+"class": "Client",
+"language": "GDScript",
+"path": "res://src/network/Client.gd"
+}, {
+"base": "RequestBase",
+"class": "ClientRequest",
+"language": "GDScript",
+"path": "res://src/network/client_request/ClientRequest.gd"
+}, {
+"base": "Reference",
+"class": "Const",
+"language": "GDScript",
+"path": "res://src/Const.gd"
+}, {
+"base": "Reference",
+"class": "DataTool",
+"language": "GDScript",
+"path": "res://src/DataTool.gd"
+}, {
+"base": "Reference",
+"class": "DbClient",
+"language": "GDScript",
+"path": "res://src/network/db_op/DbClient.gd"
+}, {
+"base": "Reference",
+"class": "DbConst",
+"language": "GDScript",
+"path": "res://src/DbConst.gd"
+}, {
+"base": "Reference",
+"class": "DictListTool",
+"language": "GDScript",
+"path": "res://src/DictListTool.gd"
+}, {
+"base": "Reference",
+"class": "Form",
+"language": "GDScript",
+"path": "res://gui/scenes/configuration_system/workflow_manage/form_designn/Form.gd"
+}, {
+"base": "FormComponentBase",
+"class": "FormCheckBox",
+"language": "GDScript",
+"path": "res://gui/scenes/configuration_system/workflow_manage/form_designn/components/FromCheckBox.gd"
+}, {
+"base": "PanelContainer",
+"class": "FormComponentBase",
+"language": "GDScript",
+"path": "res://gui/scenes/configuration_system/workflow_manage/form_designn/components/FormComponentBase.gd"
+}, {
+"base": "FormComponentBase",
+"class": "FormLabel",
+"language": "GDScript",
+"path": "res://gui/scenes/configuration_system/workflow_manage/form_designn/components/FormLabel.gd"
+}, {
+"base": "FormComponentBase",
+"class": "FormLineEdit",
+"language": "GDScript",
+"path": "res://gui/scenes/configuration_system/workflow_manage/form_designn/components/FormLineEdit.gd"
+}, {
+"base": "FormComponentBase",
+"class": "FormSpinBox",
+"language": "GDScript",
+"path": "res://gui/scenes/configuration_system/workflow_manage/form_designn/components/FormSpinBox.gd"
+}, {
+"base": "FormComponentBase",
+"class": "FormTextEdit",
+"language": "GDScript",
+"path": "res://gui/scenes/configuration_system/workflow_manage/form_designn/components/FormTextEdit.gd"
+}, {
+"base": "",
+"class": "GitAPI",
+"language": "NativeScript",
+"path": "res://addons/godot-git-plugin/git_api.gdns"
+}, {
+"base": "Container",
+"class": "HFlowContainer",
+"language": "GDScript",
+"path": "res://addons/h_flow_container/h_flow_container.gd"
+}, {
+"base": "PanelContainer",
+"class": "List_preview",
+"language": "GDScript",
+"path": "res://addons/Todot/Src/Scripts/ListPreview.gd"
+}, {
+"base": "Resource",
+"class": "LocalizationData",
+"language": "GDScript",
+"path": "res://addons/localization_editor/model/LocalizationData.gd"
+}, {
+"base": "Reference",
+"class": "LocalizationKeys",
+"language": "GDScript",
+"path": "res://localization/LocalizationKeys.gd"
+}, {
+"base": "Reference",
+"class": "LocalizationPlaceholders",
+"language": "GDScript",
+"path": "res://localization/LocalizationPlaceholders.gd"
+}, {
+"base": "Resource",
+"class": "LocalizationPlaceholdersData",
+"language": "GDScript",
+"path": "res://addons/localization_editor/model/LocalizationPlaceholdersData.gd"
+}, {
+"base": "Resource",
+"class": "LocalizationSave",
+"language": "GDScript",
+"path": "res://addons/localization_editor/model/LocalizationSave.gd"
+}, {
+"base": "PostgreSQLClient",
+"class": "PgSqlClient",
+"language": "GDScript",
+"path": "res://src/postgreSql/PgSqlClient.gd"
+}, {
+"base": "Object",
+"class": "PostgreSQLClient",
+"language": "GDScript",
+"path": "res://src/postgreSql/PostgreSQLClient.gd"
+}, {
+"base": "GridContainer",
+"class": "PropGridContainer",
+"language": "GDScript",
+"path": "res://gui/scenes/configuration_system/workflow_manage/form_designn/PropGridContainer.gd"
+}, {
+"base": "Node",
+"class": "ProtocalClass",
+"language": "GDScript",
+"path": "res://src/network/Protocol.gd"
+}, {
+"base": "Reference",
+"class": "RequestBase",
+"language": "GDScript",
+"path": "res://src/network/client_request/RequestBase.gd"
+}, {
+"base": "Reference",
+"class": "SQL",
+"language": "GDScript",
+"path": "res://src/network/db_op/SQL.gd"
+}, {
+"base": "Reference",
+"class": "ScenePaths",
+"language": "GDScript",
+"path": "res://gui/scenes/ScenePaths.gd"
+}, {
+"base": "Node",
+"class": "SubServer",
+"language": "GDScript",
+"path": "res://src/network/SubServer.gd"
+}, {
+"base": "Control",
+"class": "Todo",
+"language": "GDScript",
+"path": "res://addons/Todot/Src/Scripts/Todo.gd"
+}, {
+"base": "PanelContainer",
+"class": "VerticalIconButton",
+"language": "GDScript",
+"path": "res://gui/components/VerticalIconButton.gd"
+} ]
+_global_script_class_icons={
+"Client": "",
+"ClientRequest": "",
+"Const": "",
+"DataTool": "",
+"DbClient": "",
+"DbConst": "",
+"DictListTool": "",
+"Form": "",
+"FormCheckBox": "",
+"FormComponentBase": "",
+"FormLabel": "",
+"FormLineEdit": "",
+"FormSpinBox": "",
+"FormTextEdit": "",
+"GitAPI": "",
+"HFlowContainer": "res://addons/h_flow_container/h_flow_container.svg",
+"List_preview": "",
+"LocalizationData": "",
+"LocalizationKeys": "",
+"LocalizationPlaceholders": "",
+"LocalizationPlaceholdersData": "",
+"LocalizationSave": "",
+"PgSqlClient": "",
+"PostgreSQLClient": "",
+"PropGridContainer": "",
+"ProtocalClass": "",
+"RequestBase": "",
+"SQL": "",
+"ScenePaths": "",
+"SubServer": "",
+"Todo": "",
+"VerticalIconButton": ""
+}
+
+[application]
+
+config/name="Server"
+run/main_scene="res://gui/scenes/login_dialog/LoignDialog.tscn"
+config/icon="res://icon.png"
+
+[autoload]
+
+DispatchQueueNode="*res://addons/dispatch_queue/dispatch_queue_node.gd"
+ClientObj="*res://src/network/Client.gd"
+Protocol="*res://src/network/Protocol.gd"
+MessagePopup="*res://gui/scenes/message_popup/MessagePopup.tscn"
+LoadingPopup="*res://gui/scenes/loading_popup/LoadingPopup.tscn"
+MainServer="*res://src/network/MainServer.gd"
+Generator="*res://src/Generator.gd"
+
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/size/test_width=1600
+window/size/test_height=900
+window/dpi/allow_hidpi=true
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/CodeSnippetPopup/plugin.cfg", "res://addons/GDScriptMacros/plugin.cfg", "res://addons/hide_3d/plugin.cfg", "res://addons/hide_assetlib/plugin.cfg", "res://addons/table/plugin.cfg", "res://addons/wakatime/plugin.cfg" )
+
+[gdnative]
+
+singletons=[ "res://addons/godot-git-plugin/git_api.gdnlib" ]
+
+[gui]
+
+theme/use_hidpi=true
+theme/custom="res://Theme/default_theme.tres"
+theme/custom_font="res://Theme/default_font.tres"
+
+[locale]
+
+translations=PoolStringArray( "res://localization/localizations.zh.translation", "res://localization/localizations.en.translation" )
+locale_filter=[ 0, [ "zh" ] ]
+
+[localization_editor]
+
+translations_split_offset=408
+
+[physics]
+
+common/enable_pause_aware_picking=true
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"
